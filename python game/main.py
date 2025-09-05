@@ -1,4 +1,5 @@
 import pygame
+import os
 from config import *
 from scenes import TitleScene
 from assets import load_assets, CHARACTERS, BACKGROUNDS # Import asset loaders
@@ -6,6 +7,11 @@ from assets import load_assets, CHARACTERS, BACKGROUNDS # Import asset loaders
 def main():
     pygame.init()
     
+    # Load and play background music
+    music_path = os.path.join(os.path.dirname(__file__), 'assets', 'beethoven-concert-nr3-relaxing-classical-piano-216328.mp3')
+    pygame.mixer.music.load(music_path)
+    pygame.mixer.music.play(-1)  # -1 for infinite loop
+
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
     # Load all the images
