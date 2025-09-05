@@ -297,18 +297,24 @@ class MovementScene(Scene):
 
     def process_input(self, events, pressed_keys):
         self.is_moving = False
+        new_x, new_y = self.player_rect.x, self.player_rect.y
+
         if pressed_keys[pygame.K_w]:
-            self.player_rect.y -= self.player_speed
+            new_y -= self.player_speed
             self.is_moving = True
         if pressed_keys[pygame.K_s]:
-            self.player_rect.y += self.player_speed
+            new_y += self.player_speed
             self.is_moving = True
         if pressed_keys[pygame.K_a]:
-            self.player_rect.x -= self.player_speed
+            new_x -= self.player_speed
             self.is_moving = True
         if pressed_keys[pygame.K_d]:
-            self.player_rect.x += self.player_speed
+            new_x += self.player_speed
             self.is_moving = True
+
+        # Clamp player position to screen boundaries
+        self.player_rect.x = max(0, min(new_x, SCREEN_WIDTH - self.player_rect.width))
+        self.player_rect.y = max(0, min(new_y, SCREEN_HEIGHT - self.player_rect.height))
 
     def update(self):
         # Animate player
