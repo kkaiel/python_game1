@@ -40,85 +40,63 @@ class Scene:
 # --- Story Data ---
 
 STORY_SCRIPT = [
-    # Chapter 1: The Masked Departure
-    {"bg": "ship_deck", "char": "taehun", "dialogue": "'최후의 1인에게 모든 것을.' 이것이 우리가 이 배에 탄 이유다. 모두가 웃고 있지만, 그 가면 아래에는 날카로운 발톱이 숨겨져 있겠지."},
-    {"bg": "ship_deck", "char": "taehun", "dialogue": "나는 '이상적인 리더'를 연기해야 한다. 모두를 이끄는 척, 걱정하는 척. 그래야 그들의 경계를 풀 수 있다."},
-    {"bg": "ship_deck", "char": "jihun", "dialogue": "태훈, 준비는 다 됐어? 다들 널 기다리고 있어. 역시 당신이 우리 리더야."},
-    {"bg": "ship_deck", "char": "seoyoung", "dialogue": "왠지... 불안해요. 우리, 정말 서로를 믿고 끝까지 갈 수 있을까요?"},
-    {"bg": "ship_deck", "char": "taesung", "dialogue": "믿음? 이 배에 그런 순진한 걸 들고 온 녀석도 있나?"},
-    {"bg": "ship_deck", "char": "mina", "dialogue": "(수첩에 무언가를 적으며) 신뢰는 가장 강력한 무기이자, 가장 치명적인 약점이죠."},
-    {"bg": "ship_deck", "char": "taehun", "dialogue": "걱정 마, 서영. 내가 모두를 이끌겠다. 우리는 '하나의 팀'이니까. (마음속: 그래, 마지막 한 명이 남을 때까지는.)"},
+    # 1장: 파도 위의 미묘한 시작
+    {"bg": "ship_deck", "char": "taehun", "dialogue": "5일 동안 함께 지낼 얼굴들인데, 다들 어딘가 거짓된 미소를 가지고 있다. 나 역시 예외는 아니고."},
+    {"bg": "ship_deck", "char": "action", "dialogue": "슬쩍 주머니 속 봉투를 만지작거린다. 평범한 안내문 뒤에는 각자에게 주어진 은밀한 임무가 있었다."},
+    {"bg": "ship_deck", "char": "jihun", "dialogue": "태훈아, 오늘 날씨 꽤 괜찮지? 그래도 내일부터는 또 폭풍 친다던데... 좀 불안해."},
+    {"bg": "ship_deck", "char": "seoyoung", "dialogue": "전 처음이라 좀 무서워요... 그런데 왜 구명조끼가 딱 5개밖에 없죠?"},
+    {"bg": "ship_deck", "char": "mina", "dialogue": "우리 엄마는 참가 전에 유언장 쓰라더라고요. 농담이겠지, 그래도 그런 농담이 왜 자꾸 생각나는지."},
+    {"bg": "ship_deck", "char": "taesung", "dialogue": "정말... 좀 이상하네. 이렇게 여유분 없는 준비라니."},
+    {"bg": "ship_deck", "char": "action", "dialogue": "뭔가 이상하다. 누구도 자신의 임무를 말하지 않고, 묘하게 서로를 경계하고 있었다."},
 
-    # Chapter 2: The First Gamble
-    {"bg": "ship", "char": "taesung", "dialogue": "이 단축 항로는 미친 짓이야. 실패하면 모든 걸 잃어. 돌아가야 해."},
-    {"bg": "ship", "char": "taehun", "dialogue": "(마음속: 태성은 나를 무모한 리더로 보이게 해서 내 권위를 실추시키려는 거다. 여기서 물러설 순 없어.)"},
-    {"bg": "ship", "char": "taehun", "dialogue": "위험이 큰 만큼, 성공했을 때 얻는 것도 크다. '중간 평가 1위'에게 주어지는 어드밴티지를 잊었나?"},
-    {"bg": "ship", "char": "jihun", "dialogue": "하지만 태성의 말도 일리가 있어. 너무 위험해. 다수결로 정하는 게 어때?"},
-    {"bg": "ship", "char": "taehun", "dialogue": "(마음속: 지훈은 교묘하게 내 리더십에 흠집을 내고 있다. 중재자인 척하며 자신의 영향력을 키우려는 속셈.)"},
-    {"bg": "ship", "char": "seoyoung", "dialogue": "전... 전 무서워요. 그냥 안전하게 가고 싶어요..."},
-    {"bg": "ship", "char": "mina", "dialogue": "(데이터를 보여주며) 단축 항로의 성공 확률은 34.5%. 하지만 성공 시, 최종 점수에서 20%의 가산점을 얻습니다. 선택은 각자의 몫이죠."},
-    {"bg": "ship", "char": "taehun", "dialogue": "나는 가겠다. 이 위험을 감수하지 않고는 어차피 최후의 1인이 될 수 없어. 따라오지 않을 사람은 지금 말해라."},
+    # 2장: 선택의 길목
+    {"bg": "ship", "char": "taehun", "dialogue": "우리... 아마 시간 단축하려면 위험을 감수해야 해."},
+    {"bg": "ship", "char": "taesung", "dialogue": "진짜 그 길로 갈 생각이야? 어제 일기예보에서 거기 폭풍 몰아친다던데."},
+    {"bg": "ship", "char": "jihun", "dialogue": "각자 받은 봉투 내용, 솔직히 다들 신경 쓰고 있잖아. 그냥 놀러 온 게 아니란 거 우리 모두 알고 있지?"},
+    {"bg": "ship", "char": "seoyoung", "dialogue": "그, 그런 얘기 하지 마요. 우리 임무는 비밀이라 했잖아요."},
+    {"bg": "ship", "char": "mina", "dialogue": "전 다른 사람 행동 관찰이 임무에요. 이미 이 모든 게 연결된다는 생각이 들어요."},
+    {"bg": "ship", "char": "action", "dialogue": "서로를 보는 시선이 점점 날카로워진다. 이건 분명 단순한 팀워크 프로그램이 아니다."},
+    {"bg": "ship", "char": "taehun", "dialogue": "‘지금 우리에게 필요한 건 정직이 아니라... 살아남는 쪽을 선택하는 용기일지도 모른다.’"},
 
-    # Chapter 3: The Stolen Secrets
-    {"bg": "investigation", "char": "seoyoung", "dialogue": "내... 내 가방이...!! 주최 측이 나눠준 각자의 '비밀 과제'가 들어있었는데, 없어졌어요!"},
-    {"bg": "investigation", "char": "taesung", "dialogue": "그걸 왜 이제 와서 말하는 거야! 그리고 왜 날 그런 눈으로 봐? 내가 훔쳤다는 거야?"},
-    {"bg": "investigation", "char": "jihun", "dialogue": "진정해, 태성. 하지만 넌 아까부터 계속 서영 씨 주변을 맴돌았잖아."},
-    {"bg": "investigation", "char": "taehun", "dialogue": "(마음속: 모두가 서로를 의심하기 시작했다. 혼란스럽지만, 지금이 다른 사람의 속내를 떠볼 기회다.)"},
-    {"bg": "investigation", "char": "taehun", "dialogue": "모두 진정해. 내가 한 명씩 들어보겠다. 서영, 마지막으로 가방을 본 게 언제지?"},
-    {"bg": "investigation", "char": "seoyoung", "dialogue": "(울먹이며) 아까... 태성 씨랑 잠시 부딪혔을 때... 그 후로 보지 못했어요..."},
-    {"bg": "investigation", "char": "taesung", "dialogue": "뭐? 너 지금 날 범인으로 모는 거냐? 그냥 스쳐 지나간 것뿐이야!"},
-    {"bg": "investigation", "char": "mina", "dialogue": "(수첩을 넘기며) 흥미롭네요. 두 사람의 동선이 겹친 시간은 3.7초. 무언가를 훔치기엔 너무 짧은 시간 아닌가요?"},
-    {"bg": "investigation", "char": "taehun", "dialogue": "(마음속: 민아... 넌 항상 모든 걸 지켜보고 있구나. 널 가장 경계해야 할지도 몰라.)"},
+    # 3장: 의심의 불씨
+    {"bg": "ship_deck", "char": "seoyoung", "dialogue": "제... 제 개인 임무서가 없어졌어요. 아무도 안 봤나요?"},
+    {"bg": "ship_deck", "char": "taesung", "dialogue": "그런 거 왜 아무 데나 둬? 설마 누가 훔칠 일이 있겠냐?"},
+    {"bg": "ship_deck", "char": "jihun", "dialogue": "혹시 네 임무... 우리 중 누군가랑 관련된 거야?"},
+    {"bg": "ship_deck", "char": "seoyoung", "dialogue": "...말할 수 없어요. 비밀이잖아요."},
+    {"bg": "ship_deck", "char": "mina", "dialogue": "모두의 행동을 기록하고 있는데... 서영씨만 계속 무언가를 숨기네요."},
+    {"bg": "ship_deck", "char": "taehun", "dialogue": "‘우린 서로를 견제하도록 설계된 거야. 이 바다에선 누구도 완전한 아군이 아니구나.’"},
 
-    # Chapter 4: Storm and Sacrifice
-    {"bg": "ship", "char": "seoyoung", "dialogue": "(폭풍 속에서 비명을 지르며) 알았어요! 누가 내 과제를 훔쳐 갔는지 알았어! 그 사람은..."},
-    {"bg": "ship", "char": "taesung", "dialogue": "시끄러워! 이 상황에 그게 중요해? 밧줄이나 꽉 잡아!"},
-    {"bg": "ship", "char": "taehun", "dialogue": "(거대한 파도가 덮치고, 서영이 균형을 잃는다. 그녀의 손이 내게 닿으려 한다. 잡을 것인가, 놓을 것인가...)"},
-    {"bg": "ship", "char": "taehun", "dialogue": "(마음속: 그녀를 구하면 혼란만 가중될 뿐이다. 그녀는 너무 많은 것을 알아버렸어. 여기서 탈락해주는 편이... 모두를 위해 좋아.)"},
-    {"bg": "ship", "char": "taehun", "dialogue": "서영아! 으... 놓쳤다! 파도가 너무 강했어..."},
-    {"bg": "ship", "char": "jihun", "dialogue": "(충격받은 표정으로) 태훈... 너... 방금..."},
-    {"bg": "ship", "char": "taesung", "dialogue": "네 놈이 일부러 놓은 거 다 봤어! 이 살인자!"},
-    {"bg": "ship", "char": "taehun", "dialogue": "헛소리 마! 이 혼란 속에서 내가 뭘 어떻게 할 수 있었다는 거야!"},
-    {"bg": "ship", "char": "jihun", "dialogue": "그만해! 둘 다! 이러다 다 죽어! 태성, 넌 저쪽 밧줄을 잡아! 태훈, 넌 나랑 같이... (그때, 부러진 돛대가 지훈을 덮친다)"},
-    {"bg": "ship", "char": "jihun", "dialogue": "(피를 흘리며) 태훈... 민아를... 조심해... 그녀의 수첩에... 모든..."},
-    {"bg": "ship", "char": "taesung", "dialogue": "이제 너랑 나, 둘만 남았다. 여기서 끝장을 보자, 태훈!"},
-    {"bg": "ship", "char": "taehun", "dialogue": "(태성과의 격투 끝에, 나는 그를 차가운 바다로 밀어 넣었다. 그의 눈에 비친 것은 공포가 아닌, 안도감이었다. 왜지?)"},
+    # 4장: 폭풍과 갈등
+    {"bg": "ship", "char": "seoyoung", "dialogue": "제 임무, 사실... 리더의 판단력을 시험하라는 거였어요. 태훈씨를 관찰하라고 했어요."},
+    {"bg": "ship", "char": "taesung", "dialogue": "무슨 소리야? 우리 모두가 서로를 감시하고 있었단 말이야?"},
+    {"bg": "ship", "char": "jihun", "dialogue": "지금 그런 거 따질 때가 아니야! 살아남는 게 먼저야!"},
+    {"bg": "ship", "char": "action", "dialogue": "그 순간, 배가 기울며 서영이 미끄러졌다. 태훈은 망설임 끝에 손을 내밀었지만 파도가 그녀를 데려갔다."},
+    {"bg": "ship", "char": "action", "dialogue": "지훈은 그녀를 잡으려다 돛대에 다쳤고, 태성은 절망 속에서 바다를 바라보다 시야에서 사라졌다."},
+    {"bg": "ship", "char": "taehun", "dialogue": "‘이 게임의 정답은... 인간성에 남겨진 흔적뿐이다.’"},
 
-    # Chapter 5: The Last Liar
-    {"bg": "ship_deck", "char": "mina", "dialogue": "결국 우리 둘만 남았네요, 태훈 씨."},
-    {"bg": "ship_deck", "char": "taehun", "dialogue": "민아... 지훈이가 마지막에 네 이야기를 했어. 대체 뭘 알고 있는 거지?"},
-    {"bg": "ship_deck", "char": "mina", "dialogue": "(수첩을 펼쳐 보이며) 모든 것을요. 서영 씨의 과제를 훔친 건 지훈 씨였어요. 그는 그걸로 태성 씨를 협박해 당신을 리더 자리에서 끌어내리려 했죠."},
-    {"bg": "ship_deck", "char": "mina", "dialogue": "서영 씨는 당신이 일부러 손을 놓았고, 태성 씨는 당신과 싸우다 죽은 게 아니라, 지쳐서 스스로 바다에 몸을 던졌죠. 삶에 대한 의지가 없었으니까."},
-    {"bg": 'ship_deck', "char": "mina", "dialogue": "그리고 전... 이 모든 사실을 기록했죠. 이제 어떡할까요? 이 기록을 주최 측에 넘기면, 최종 승자는 제가 되겠네요."},
-    {"bg": "ship_deck", "char": "taehun", "dialogue": "...원하는 게 뭐지?"},
-    {"bg": "ship_deck", "char": "mina", "dialogue": "(미소 지으며) 간단해요. 저와 함께 '완벽한 이야기'를 만드는 거예요. 비극적인 사고로 모두를 잃고, 힘을 합쳐 살아남은 두 명의 생존자. 상금은 반반씩 나누는 거죠."},
-    {"bg": "ship_deck", "char": "taehun", "dialogue": "(그녀가 내민 독이 든 와인잔을 받으며) ...좋은 제안이군. 우리의 생존을 위하여."},
-    {"bg": "ship_deck", "char": "mina", "dialogue": "(잔을 부딪힌다) 생존을 위하여. (와인을 마신다)"},
-    {"bg": "ship_deck", "char": "taehun", "dialogue": "(나는 와인을 마시는 척하며 버렸다. 그녀의 잔에만 독이 들어있었으니까. 그녀는... 너무 많은 것을 알고 있었다.)"},
-    {"bg": "ship_deck", "char": "mina", "dialogue": "(피를 토하며) ...역시... 당신은... 최악의..."},
-
-    # Chapter 6: The Victor's Chronicle
-    {"bg": "bottle", "char": "taehun", "dialogue": "이제... 마지막 이야기를 쓸 시간이다. 진실은 승자의 것이니까."},
-    {"bg": "bottle", "char": "taehun", "dialogue": "'항해 일지. 나는 태훈이다. 끔찍한 폭풍 속에서, 나는 사랑하는 동료들을 모두 잃었다.'"},
-    {"bg": "bottle", "char": "taehun", "dialogue": "'서영은 모두를 구하기 위해 자신을 희생했고, 지훈은 마지막까지 배를 지키다 쓰러졌다. 태성은 나를 구하고 대신 파도에 휩쓸려갔다.'"},
-    {"bg": "bottle", "char": "taehun", "dialogue": "'그리고 민아... 그녀는 절망을 이기지 못하고 스스로... 아, 이 얼마나 비극적인가.'"},
-    {"bg": "bottle", "char": "taehun", "dialogue": "'이제 나 혼자 남았다. 그들의 희생을 헛되이 하지 않기 위해서라도, 나는 살아야만 한다. 이 슬픔을 안고서.' (완벽한 이야기다.)"},
+    # 5장: 마지막 인류애 (The Last Humanity)
+    {"bg": "ship_deck", "char": "mina", "dialogue": "태훈씨, 결국 남은 건 우리뿐이네요. 제 임무는 모든 것을 관찰하고 기록하는 것이었어요."},
+    {"bg": "ship_deck", "char": "mina", "dialogue": "하지만... 마지막 생존자의 ‘인류애(Humanity)’를 시험하라는 숨겨진 조건이 있었죠."},
+    {"bg": "ship_deck", "char": "taehun", "dialogue": "내... 인류애를 시험하라고?"},
+    {"bg": "ship_deck", "char": "mina", "dialogue": "그래요. 이 프로그램은 생존 게임이 아니었어요. 극한 상황에서 인간이 어떤 선택을 하는지 데이터를 수집하는 거대한 실험이었죠."},
+    {"bg": "ship_deck", "char": "mina", "dialogue": "이제, 마지막 선택은 당신의 몫이에요."},
+    {"bg": "ship_deck", "char": "taehun", "dialogue": "이곳에 이 비극의 진실을 쓸 수도, 혹은 모두를 위한 거짓된 영웅담을 쓸 수도 있어요. 당신의 마지막 기록이, 인류애에 대한 당신의 최종 대답이 될 겁니다."},
 ]
 
-PSYCHOLOGY_TEXT = [
-    ("A Victor's Psychology", True),
-    ("승자의 심리학", False),
+TWIST_TEXT = [
     ("", False),
-    ("1. 자기 합리화 (Self-Justification)", True),
-    ("태훈은 자신의 이기적인 선택(동료의 죽음 방관, 살인)을 '어쩔 수 없는 희생' 또는 '모두를 위한 결단'이었다고 스스로를 속입니다. 이는 '나는 선한 사람'이라는 자기 이미지와 잔혹한 현실 사이의 부조화를 견디기 위한 방어기제입니다.", False),
+    ("태훈이 어떤 선택을 하든, 그가 종이에 글을 남기고 병을 봉인한 순간,", False),
+    ("민아의 눈이 희미한 빛을 내며 기계적으로 깜빡인다.", False),
     ("", False),
-    ("2. 가스라이팅 (Gaslighting)", True),
-    ("최종적으로 그는 '항해 일지'라는 객관적 기록을 조작하여, 타인의 기억과 판단력을 흐리게 만들고 자신의 거짓된 서사를 진실로 만듭니다. 이는 현실을 왜곡하여 타인을 통제하려는 극단적인 심리 지배 기술입니다.", False),
+    ("민아: “흥미로운 선택입니다. 데이터 포인트가 기록되었습니다.”", True),
+    ("민아: “‘인류애’ 시뮬레이션 버전 7.3을 종료합니다. 참여에 감사드립니다.”", True),
     ("", False),
-    ("3. 마키아벨리즘 (Machiavellianism)", True),
-    ("태훈은 목적(최종 승리)을 위해 수단과 방법을 가리지 않습니다. 타인을 도구로 여기고, 공감 능력 없이 냉담하게 자신의 이익을 추구하는 모습은 마키아벨리즘 성향의 전형적인 특징을 보여줍니다.", False),
+    ("그 말이 끝나자마자, 태훈의 눈앞에 펼쳐졌던 모든 것이", False),
+    ("차가운 디지털 노이즈로 변하며 시야에서 사라진다.", False),
     ("", False),
-    ("결국, 진실은 힘을 가진 자에 의해 쓰여지는 '이야기'에 불과한 것일지도 모릅니다.", True)
+    ("그는 자신이 단 한 번도 진짜 바다 위에 있었던 적이 없다는 사실을 깨닫는다.", False),
+    ("", False),
+    ("모든 것이 인류애를 배우기 위한 정교한 시뮬레이션이었던 것이다.", True)
 ]
 
 
@@ -130,7 +108,7 @@ class TitleScene(Scene):
         font_path = os.path.join(os.path.dirname(__file__), 'assets', 'D2Coding.ttf')
         self.title_font = pygame.font.Font(font_path, 72)
         self.prompt_font = pygame.font.Font(font_path, 30)
-        self.title_text = self.title_font.render("The Last Liar", True, WHITE)
+        self.title_text = self.title_font.render("Humanity", True, WHITE) # Changed Title
         self.prompt_text = self.prompt_font.render("화면을 클릭하여 시작하세요", True, WHITE)
 
     def process_input(self, events, pressed_keys):
@@ -155,6 +133,8 @@ class StoryScene(Scene):
         font_path = os.path.join(os.path.dirname(__file__), 'assets', 'D2Coding.ttf')
         self.dialogue_font = pygame.font.Font(font_path, 28)
         self.name_font = pygame.font.Font(font_path, 32)
+        self.action_font = pygame.font.Font(font_path, 28)
+        self.action_font.set_italic(True)
         
         self.script_index = 0
         self.text_buffer = ""
@@ -173,7 +153,7 @@ class StoryScene(Scene):
             self.text_buffer = ""
             self.typing_timer = 0
         else:
-            self.next_scene = EndingScene()
+            self.next_scene = ChoiceScene() # Transition to ChoiceScene
 
     def process_input(self, events, pressed_keys):
         for event in events:
@@ -202,7 +182,6 @@ class StoryScene(Scene):
         char_name = self.current_line["char"]
         if char_name in CHARACTERS:
             char_image = CHARACTERS[char_name]
-            # Position all characters to the bottom-left
             screen.blit(char_image, (80, SCREEN_HEIGHT - char_image.get_height() - 230))
 
         s = pygame.Surface((self.text_box_rect.width, self.text_box_rect.height), pygame.SRCALPHA)
@@ -210,21 +189,81 @@ class StoryScene(Scene):
         screen.blit(s, self.text_box_rect.topleft)
         pygame.draw.rect(screen, WHITE, self.text_box_rect, 2)
 
-        char_display_name = char_name.capitalize()
-        if "(마음속:" in self.full_text or "(He thinks:" in self.full_text:
-             char_display_name = "Taehun (Monologue)"
+        font_to_use = self.dialogue_font
+        text_color = WHITE
 
-        name_surface = self.name_font.render(char_display_name, True, WHITE)
-        screen.blit(name_surface, (self.name_box_rect.x + 10, self.name_box_rect.y))
+        if char_name == "action":
+            font_to_use = self.action_font
+            text_color = (200, 200, 200) # Light grey
+        else:
+            char_display_name = char_name.capitalize()
+            if "‘" in self.full_text:
+                 char_display_name = "Taehun (Monologue)"
+
+            name_surface = self.name_font.render(char_display_name, True, WHITE)
+            screen.blit(name_surface, (self.name_box_rect.x + 10, self.name_box_rect.y))
 
         text_rect = self.text_box_rect.inflate(-40, -40)
-        draw_text(screen, self.text_buffer, self.dialogue_font, WHITE, text_rect)
+        draw_text(screen, self.text_buffer, font_to_use, text_color, text_rect)
 
-class EndingScene(Scene):
+class ChoiceScene(Scene):
     def __init__(self):
         super().__init__()
         font_path = os.path.join(os.path.dirname(__file__), 'assets', 'D2Coding.ttf')
-        self.font = pygame.font.Font(font_path, 24)
+        self.font = pygame.font.Font(font_path, 28)
+        self.title_font = pygame.font.Font(font_path, 36)
+        self.choices = [
+            "1. 진실을 써서 유리병에 넣자. 언젠가 누군가 찾을 거야.",
+            "2. 우리만의 비밀로 묻어두자. 그들을 영웅으로 기억하게 하자.",
+            "3. 둘 다 기록해서, 미래가 판단하게 하자."
+        ]
+        self.choice_rects = []
+        
+        self.title_surf = self.title_font.render("당신의 선택은?", True, WHITE)
+        self.title_rect = self.title_surf.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 150))
+
+        y_pos = SCREEN_HEIGHT // 2 - 50
+        for choice in self.choices:
+            text_surf = self.font.render(choice, True, WHITE)
+            text_rect = text_surf.get_rect(center=(SCREEN_WIDTH // 2, y_pos))
+            self.choice_rects.append(text_rect)
+            y_pos += 60
+
+    def process_input(self, events, pressed_keys):
+        for event in events:
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                for i, rect in enumerate(self.choice_rects):
+                    if rect.collidepoint(event.pos):
+                        self.next_scene = TwistScene() # Go to twist scene after any choice
+                        return
+
+    def update(self):
+        pass
+
+    def render(self, screen):
+        screen.blit(BACKGROUNDS['ship_deck'], (0, 0))
+        
+        # Semi-transparent overlay
+        s = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
+        s.fill((0, 0, 0, 150))
+        screen.blit(s, (0,0))
+
+        screen.blit(self.title_surf, self.title_rect)
+
+        for i, choice in enumerate(self.choices):
+            # Highlight on hover
+            if self.choice_rects[i].collidepoint(pygame.mouse.get_pos()):
+                text_surf = self.font.render(choice, True, (255, 255, 100)) # Yellow
+            else:
+                text_surf = self.font.render(choice, True, WHITE)
+            screen.blit(text_surf, self.choice_rects[i])
+
+
+class TwistScene(Scene):
+    def __init__(self):
+        super().__init__()
+        font_path = os.path.join(os.path.dirname(__file__), 'assets', 'D2Coding.ttf')
+        self.font = pygame.font.Font(font_path, 28)
         self.title_font = pygame.font.Font(font_path, 36)
         self.scroll_y = SCREEN_HEIGHT
         self.speed = 1
@@ -238,38 +277,18 @@ class EndingScene(Scene):
 
     def update(self):
         self.scroll_y -= self.speed
-        # A simple way to end the game after scrolling
-        if self.scroll_y < -1000: # Adjust this value based on text length
+        if self.scroll_y < -800: # Adjust this value
             self.terminate()
 
     def render(self, screen):
         screen.fill(BLACK)
         y_offset = self.scroll_y
         
-        for line, is_title in PSYCHOLOGY_TEXT:
+        for line, is_title in TWIST_TEXT:
             font = self.title_font if is_title else self.font
             color = WHITE if is_title else (200, 200, 200)
             
-            # Simple text wrapping for long lines
-            if font.size(line)[0] > SCREEN_WIDTH - 100:
-                words = line.split(' ')
-                lines = []
-                current_line = ''
-                for word in words:
-                    if font.size(current_line + ' ' + word)[0] < SCREEN_WIDTH - 100:
-                        current_line += ' ' + word
-                    else:
-                        lines.append(current_line.strip())
-                        current_line = word
-                lines.append(current_line.strip())
-                
-                for wrapped_line in lines:
-                    text_surface = font.render(wrapped_line, True, color)
-                    text_rect = text_surface.get_rect(center=(SCREEN_WIDTH / 2, y_offset))
-                    screen.blit(text_surface, text_rect)
-                    y_offset += text_rect.height + 10
-            else:
-                text_surface = font.render(line, True, color)
-                text_rect = text_surface.get_rect(center=(SCREEN_WIDTH / 2, y_offset))
-                screen.blit(text_surface, text_rect)
-                y_offset += text_rect.height + 20
+            text_surface = font.render(line, True, color)
+            text_rect = text_surface.get_rect(center=(SCREEN_WIDTH / 2, y_offset))
+            screen.blit(text_surface, text_rect)
+            y_offset += text_rect.height + 15
